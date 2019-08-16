@@ -6,9 +6,9 @@ namespace aula_02
     {
         static void Main(string[] args)
         {
-            Conta objContaJoao = new Conta(1234,"João",new Correntista(123,"Correntista do João"));
-            objContaJoao.Depositar(500);
-            w($"Num. Conta: {objContaJoao.saldo}.");
+            Conta objContaPedro = new Conta(1234,new Cliente (123,"Pedro"),new Correntista(123,"Correntista do Pedro"), new Agencia(321,"Banco do Brasil"));
+            objContaPedro.Depositar(500);
+            w($"Num. Conta: {objContaPedro.saldo}.");
             
             r();
         }
